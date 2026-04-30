@@ -10,7 +10,7 @@ import {
   Trophy,
   Quote,
 } from "lucide-react";
-import { FaLinkedin, FaXTwitter, FaGithub, FaMedium, FaTwitter, FaX } from "react-icons/fa6";
+import { FaLinkedin, FaXTwitter, FaGithub, FaMedium } from "react-icons/fa6";
 import {
   SiTypescript,
   SiJavascript,
@@ -28,9 +28,13 @@ import {
   SiFlask,
   SiHtml5,
   SiCss,
-  SiVercel,
   SiGithub,
   SiSocketdotio,
+  SiHono,
+  SiAppwrite,
+  SiShadcnui,
+  SiCloudinary,
+  SiPytorch,
 } from "react-icons/si";
 import LinkPreview from "@/components/ui/link-preview";
 import CareerNet from "@/public/careernet.png";
@@ -177,7 +181,14 @@ not just to add AI to a tech stack.
       title: "Vaiu",
       description:
         "Full-stack SaaS project management platform with workspace management, task tracking, and GitHub integration. Selected and funded under the Government of Karnataka incubation program via IIIT Raichur.",
-      techStack: ["Next.js", "TypeScript", "PostgreSQL", "GitHub API"],
+      techStack: [
+        "Next.js",
+        "Hono",
+        "TypeScript",
+        "App Write",
+        "GitHub API",
+        "Shadcn UI",
+      ],
       liveUrl: "https://vaiu.in",
       sourceUrl: null,
       color: "from-blue-500 to-cyan-400",
@@ -187,7 +198,17 @@ not just to add AI to a tech stack.
       title: "CareerNet",
       description:
         "Secure job board where users search companies and apply to admin-posted jobs, with an integrated chatbot powered by a neural network for instant in-app answers.",
-      techStack: ["Node.js", "Express", "React", "MongoDB"],
+      techStack: [
+        "Node.js",
+        "Express",
+        "React",
+        "MongoDB",
+        "Cloudinary",
+        "Flask",
+        "PyTorch",
+        "Torchvision",
+        "NLTK",
+      ],
       liveUrl: "",
       sourceUrl: "https://github.com/Akshai-M/CareerNet",
       color: "from-purple-500 to-pink-500",
@@ -207,7 +228,7 @@ not just to add AI to a tech stack.
       title: "ChessMate",
       description:
         "Real-time multiplayer chess platform using WebSockets — players create/join rooms via unique codes and view live move analytics within their games.",
-      techStack: ["JavaScript", "WebSocket", "HTML", "CSS"],
+      techStack: ["JavaScript", "WebSocket", "HTML", "CSS", "Express"],
       liveUrl: "https://chessmate-hn65.onrender.com",
       sourceUrl: null,
       color: "from-green-500 to-emerald-400",
@@ -286,7 +307,6 @@ const techIconMap: Record<
   Supabase: { icon: SiSupabase, color: "text-[#3ECF8E]" },
   PostgreSQL: { icon: SiPostgresql, color: "text-[#4169E1]" },
   MongoDB: { icon: SiMongodb, color: "text-[#47A248]" },
-  Tailwind: { icon: SiTailwindcss, color: "text-[#06B6D4]" },
   "Tailwind CSS": { icon: SiTailwindcss, color: "text-[#06B6D4]" },
   Redis: { icon: SiRedis, color: "text-[#DC382D]" },
   Flask: { icon: SiFlask, color: "text-black" },
@@ -295,6 +315,13 @@ const techIconMap: Record<
   WebSocket: { icon: SiSocketdotio, color: "text-black" },
   "GitHub API": { icon: SiGithub, color: "text-black" },
   "TanStack Query": { icon: SiReact, color: "text-[#FF4154]" },
+  Hono: { icon: SiHono, color: "text-[#FF4154]" },
+  "App Write": { icon: SiAppwrite, color: "text-[#F06595]" },
+  "Shadcn UI": { icon: SiShadcnui, color: "text-[#000000]" },
+  Cloudinary: { icon: SiCloudinary, color: "text-[#3448C5]" },
+  PyTorch: { icon: SiPytorch, color: "text-[#EE4C2C]" },
+  Torchvision: { icon: SiPytorch, color: "text-[#EE4C2C]" },
+  NLTK: { icon: SiPython, color: "text-[#3776AB]" },
 };
 
 const SectionHeading = ({
@@ -571,7 +598,9 @@ export default function Index() {
                 <div className="md:grid md:grid-cols-[160px_1fr] md:gap-12">
                   <div className="hidden md:block pt-1">
                     <p className="text-sm font-bold text-blue-600">
-                      {exp.startDate}{" - "}{exp.endDate}
+                      {exp.startDate}
+                      {" - "}
+                      {exp.endDate}
                     </p>
                   </div>
                   <div className="relative border-l border-black/10 pl-8 pb-12">
