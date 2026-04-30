@@ -68,7 +68,7 @@ not just to add AI to a tech stack.
         "Building AI-enhanced internal tools: an interview reporting pipeline using Mistral via OpenRouter, dynamic GPT-powered form generation synced with HubSpot & Google Sheets, a RAG codebase Q&A tool (Mistral Embed + Supabase vector store + Codestral, queued with BullMQ/Redis), and a Gemini-powered resume analysis dashboard with section-wise scoring.",
       startDate: "Sep 2025",
       endDate: "Present",
-      location: "Remote",
+      location: "On-site",
     },
     {
       company: "NxtWave Disruptive Technologies",
