@@ -17,7 +17,6 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Akshai Kumar",
-  description: "Portfolio of a developer passionate about building scalable, user-friendly applications using modern technologies.",
 };
 
 export default function RootLayout({
