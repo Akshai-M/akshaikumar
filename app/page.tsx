@@ -392,14 +392,14 @@ export default function Index() {
                 {item}
               </a>
             ))}
-            <a
+            {/* <a
               href={portfolioData.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-black text-white rounded-full hover:bg-blue-600 transition-all duration-300"
             >
               Resume
-            </a>
+            </a> */}
           </div>
 
           <button
@@ -432,14 +432,14 @@ export default function Index() {
                 {item}
               </a>
             ))}
-            <a
+            {/* <a
               href={portfolioData.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
             >
               Resume
-            </a>
+            </a> */}
           </div>
         </div>
       )}
