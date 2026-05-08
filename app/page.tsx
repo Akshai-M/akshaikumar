@@ -41,6 +41,7 @@ import CareerNet from "@/public/careernet.png";
 import vaiu from "@/public/vaiu.png";
 import thrifttrail from "@/public/thrifttrail.png";
 import chessmate from "@/public/chessmate.png";
+import shivaleela from "@/public/shivaleela.png";
 
 const portfolioData = {
   name: "AK",
@@ -215,14 +216,14 @@ not just to add AI to a tech stack.
       img: CareerNet.src,
     },
     {
-      title: "StreamLink",
+      title: "Shivaleela Cultural Trust",
       description:
-        "Full-stack chat and video calling platform with real-time messaging, typing indicators, reactions, and 1-on-1 / group calls with screen sharing and recording.",
-      techStack: ["React", "Express", "MongoDB", "TanStack Query"],
-      liveUrl: null,
-      sourceUrl: "https://github.com/Akshai-M/StreamLink",
-      color: "from-orange-500 to-red-500",
-      img: "",
+        "This is Next.js application for Shivaleela Cultural Trust, a responsive digital platform for a premier Bengaluru arts academy, blending a 12-year legacy in Bharatanatyam with modern UI. Features include a seamless enrollment system and a high-performance production gallery.",
+      techStack: ["Next.js", "Tailwind CSS", "TypeScript", "Shadcn UI"],
+      liveUrl: "https://www.shivaleelaculturaltrust.com/",
+      sourceUrl: null,
+      color: "from-indigo-500 to-blue-400",
+      img: shivaleela.src,
     },
     {
       title: "ChessMate",
@@ -238,22 +239,22 @@ not just to add AI to a tech stack.
       title: "Thrift Trail",
       description:
         "Personal finance tracker for logging income/expenses, categorizing transactions, and visualizing spending patterns with interactive charts.",
-      techStack: ["React", "TypeScript", "Tailwind"],
+      techStack: ["React", "TypeScript", "Tailwind CSS"],
       liveUrl: "https://thrift-trail-project.vercel.app/",
       sourceUrl: null,
       color: "from-amber-500 to-yellow-400",
       img: thrifttrail.src,
     },
-    {
-      title: "Apprenticeship DB System",
-      description:
-        "Tracks employee onboarding from join date through training completion with real-time status updates for trainees throughout the journey.",
-      techStack: ["Python", "Flask", "HTML", "CSS"],
-      liveUrl: null,
-      sourceUrl: "https://github.com/Akshai-M/DBMS-Project",
-      color: "from-indigo-500 to-blue-400",
-      img: "",
-    },
+    // {
+    //   title: "StreamLink",
+    //   description:
+    //     "Full-stack chat and video calling platform with real-time messaging, typing indicators, reactions, and 1-on-1 / group calls with screen sharing and recording.",
+    //   techStack: ["React", "Express", "MongoDB", "TanStack Query"],
+    //   liveUrl: null,
+    //   sourceUrl: "https://github.com/Akshai-M/StreamLink",
+    //   color: "from-orange-500 to-red-500",
+    //   img: "",
+    // },
   ],
 
   blogs: [
@@ -641,14 +642,14 @@ export default function Index() {
                 >
                   {/* Preview */}
                   <div
-                    className={`relative w-full h-100 bg-gradient-to-br ${project.color} overflow-hidden`}
+                    className={`relative w-full h-auto bg-gradient-to-br ${project.color} overflow-hidden`}
                   >
                     {project.img && project.img ? (
                       <img
                         src={project.img}
                         alt={`${project.title} preview`}
                         loading="lazy"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-contain overflow-hidden group-hover:scale-110 transition-transform duration-500"
                       />
                     ) : project.liveUrl ? (
                       <div className="w-full h-full group-hover:scale-105 transition-transform duration-500">
